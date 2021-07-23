@@ -1,8 +1,16 @@
-import './App.css';
+import React from "react";
+import Routes from "./Routes";
+import './App.css'; 
 
-function App() {
+import whiskey from './dog_pics/whiskey.jpg'
+import duke from './dog_pics/duke.jpg';
+import perry from './dog_pics/perry.jpg';
+import tubby from './dog_pics/tubby.jpg';
+
+function App({dogs}) {
   return (
     <div className="App">
+      <Routes dogs={dogs}/>
     </div>
   );
 }
